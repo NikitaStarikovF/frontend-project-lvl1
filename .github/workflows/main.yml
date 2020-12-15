@@ -15,8 +15,7 @@ jobs:
   cd:
     runs-on: ubuntu-latest
 
-     steps:
-      
+    steps:
       - name: cd 
         run: cd bin
                 
@@ -25,7 +24,6 @@ jobs:
     needs: [cd]
 
     steps:
-      
       - name: Run linter
         run: make lint
    
