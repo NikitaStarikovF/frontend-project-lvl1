@@ -8,20 +8,17 @@ on:
   push:
     branches: [ master ]
   
-
+defaults:
+  run:
+    working-directory: ./bin
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  cd:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: cd 
-        run: cd bin
+  
                 
   make_lint:
     runs-on: ubuntu-latest
-    needs: [cd]
+    
 
     steps:
       - name: Run linter
