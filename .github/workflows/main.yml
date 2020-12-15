@@ -7,21 +7,18 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
-  
-defaults:
-  run:
-    working-directory: ./bin
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   
                 
-  make_lint:
+  b-g:
     runs-on: ubuntu-latest
     
 
     steps:
-      - name: Run linter
-        run: make lint
+      - name: b-g
+        run: brain-games
    
 
