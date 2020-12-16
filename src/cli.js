@@ -1,7 +1,4 @@
-
-
-let questionName = (name) => {
-    console.log("Hello, " + name)
-}
-
+const questionName = (name) => {
+  console.log(`Hello, ${name}`);
+};
 export default questionName;
