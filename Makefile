@@ -1,5 +1,8 @@
 install:
-	        npm install
+	install-deps
+
+install-deps:
+	npm ci
 
 make lint:
 	        npx eslint .
