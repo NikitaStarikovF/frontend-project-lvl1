@@ -1,8 +1,10 @@
-name: Node.js CI
+name: Node CI
 
 on:
-  - push
-  - pull_request
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -11,28 +13,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [13.x]
 
     steps:
-        # Check-out repository under GitHub workspace
-        # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
-        # Step's name
-      - name: Use Node.js ${{ matrix.node-version }}
-        # Configures the node version used on GitHub-hosted runners
-        # https://github.com/actions/setup-node
-        uses: actions/setup-node@v1
-        # The Node.js version to configure
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install, build
-        # Install and build project
-        run: |
-          install
-        # Add environment variables
-        env:
-          CI: true
-      - name: Run linter
-        # Run Linter
-        run: |
-          make lint
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: install
+    - run: make lint
+      env:
+        CI: true
