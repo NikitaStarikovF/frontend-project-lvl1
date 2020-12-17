@@ -3,5 +3,6 @@
 
 <a href="https://codeclimate.com/github/NikitaStarikovF/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/602427f0cc82fa16fc4d/maintainability" /></a>
 
-<a href="https://github.com/NikitaStarikovF/frontend-project-lvl1/workflows/Node.jsCI/badge.svg"><img
-src="https://github.com/actions/hello-world/workflows/Greet%20Everyone/badge.svg" /></a>                                                                                                     
+                                                                                               
+[![Node CI](https://github.com/NikitaStarikovF/frontend-project-lvl1/workflows/Node.jsCI/badge.svg)]
+(https://github.com/NikitaStarikovF/frontend-project-lvl1/actions)
