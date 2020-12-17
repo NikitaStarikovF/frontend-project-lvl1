@@ -1,4 +1,4 @@
-name: Node CI
+name:  Ml
 
 on:
   push:
@@ -11,17 +11,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
+
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: install
+    - name: Make lint
     - run: make lint
-      env:
-        CI: true
+
