@@ -2,17 +2,13 @@ name:  Ml
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    branches:
+     -master
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
     steps:
-          - name: git clone my repo
+          - name: Git clone my repo
           - uses: actions/checkout@v1
           
           - name: Make lint
