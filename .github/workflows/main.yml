@@ -10,11 +10,15 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-
-
+    
     steps:
-    - uses: actions/checkout@v2
-    - name: Make lint
-    - run: make lint
+          - name: git clone my repo
+          - uses: actions/checkout@v1
+          
+          - name: Make lint
+          - run:  make lint
+            
+            
+            
+
 
