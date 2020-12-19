@@ -6,3 +6,5 @@
                                                                                                
 ![Node CI](https://github.com/NikitaStarikovF/frontend-project-lvl1/workflows/Node.jsCI/badge.svg)
 
+https://asciinema.org/a/uLl8mMifjlX74Wfdz8zqdDPr1
+
