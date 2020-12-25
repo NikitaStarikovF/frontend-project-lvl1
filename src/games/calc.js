@@ -15,15 +15,15 @@ const brainCalc = () => {
   const rOp = randomOper();
   if (rOp === '+') {
     rightAnswer = rNum1 + rNum2;
-}
+  }
   if (rOp === '-') {
     rightAnswer = rNum1 - rNum2;
-}
+  }
   if (rOp === '*') {
     rightAnswer = rNum1 * rNum2;
-}
+  }
 
-  console.log('rightAnswer = ' + rightAnswer );
+  console.log('rightAnswer = ' + rightAnswer);
   /* console.log('What is the result of the expression?'); */
   console.log(`Question: ${rNum1} ${rOp} ${rNum2} `);
   const answer = readlineSync.question('Your answer: ');
