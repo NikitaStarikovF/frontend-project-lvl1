@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
 import randomOper from '../random-opertor.js';
 import randomNum from '../random-number.js';

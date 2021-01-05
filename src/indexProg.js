@@ -6,13 +6,7 @@ import {
   globAnswer,
   rightAnswer,
   brifing,
-} from './games/b-e.js';
-/* import {
-  arr,
-  globAnswer,
-  rightAnswer,
-  brifing
-} from './games/calc.js'; */
+} from './games/brain-prog.js';
 
 const engine = (game) => {
   let err = 0;
@@ -37,6 +31,5 @@ const engine = (game) => {
   }
   if (err === 0) console.log(`Congratulations, ${name}!`);
 };
-/* engine(brainEven); */
 
 export default engine;

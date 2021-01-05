@@ -1,9 +1,5 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
-/* import questionName from '../cli.js'; */
 import randomNum from '../random-number.js';
-/* import engine from '../index.js'; */
 
 export const arr = [];
 export let rightAnswer = 'yes';
@@ -11,7 +7,6 @@ export let globAnswer = '';
 export const brifing = 'Answer "yes" if the number is even, otherwise answer "no".';
 const brainEven = () => {
   const rNum = randomNum();
-/*   console.log('Answer "yes" if the number is even, otherwise answer "no".'); */
   console.log(`Question: ${rNum}`);
   const answer = readlineSync.question('Your answer: ');
   globAnswer = answer;

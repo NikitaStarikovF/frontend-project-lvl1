@@ -10,4 +10,4 @@ const NOD = (rNum1, rNum2) => {
 console.log(NOD(100, 52));
 console.log(NOD(12, 18)); */
 
-export default NOD
+export default NOD;
