@@ -9,22 +9,16 @@ export const brifing = 'What number is missing in the progression?';
 
 const brainProgRun = () => {
   const brainProg = () => {
-    const fiveToTen = (min = 5, max = 10) => {
-      const r = Math.round(Math.random() * (max - min) + min);
-      return r;
-    };
+    const fiveToTen = randomNum(5, 10);
 
-    const oneToTen = (min = 1, max = 10) => {
-      const r = Math.round(Math.random() * (max - min) + min);
-      return r;
-    };
+    const oneToTen = randomNum(1, 10);
 
     let rNum = randomNum();
-    const prog = oneToTen();
+    const prog = oneToTen;
 
     const progFunc = () => {
       const arrF = [];
-      for (let i = 0; i < fiveToTen(); i += 1, rNum += prog) {
+      for (let i = 0; i < fiveToTen; i += 1, rNum += prog) {
         arrF.push(rNum);
       }
       return arrF;
