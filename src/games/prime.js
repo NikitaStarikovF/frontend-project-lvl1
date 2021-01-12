@@ -7,7 +7,7 @@ const globAnswer = ['no'];
 const rightAnswer = [''];
 const brifing = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const brainPrime = () => {
+const bPr = () => {
   const rNum = randomNum();
   function isPrime(n) {
     if (n < 2) {
@@ -18,7 +18,7 @@ const brainPrime = () => {
     let i = 2;
     const limit = Math.sqrt(n);
     while (i <= limit) {
-      if (n % i === 0) { 
+      if (n % i === 0) {
         return 'no';
       } i += 1;
     } return 'yes';
@@ -35,7 +35,7 @@ const brainPrime = () => {
     arr.push('+');
   }
 };
-engine(brainPrime, brifing, arr, rightAnswer, globAnswer);
+engine(bPr, brifing, arr, rightAnswer, globAnswer);
 
 const bPrimeRun = () => {};
 

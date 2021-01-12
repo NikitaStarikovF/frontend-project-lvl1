@@ -7,7 +7,7 @@ const rightAnswer = ['no'];
 const globAnswer = [''];
 const brifing = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const brainEven = () => {
+const bE = () => {
   const rNum = randomNum();
   console.log(`Question: ${rNum}`);
   const answer = readlineSync.question('Your answer: ');
@@ -24,7 +24,7 @@ const brainEven = () => {
     arr.push('+');
   }
 };
-engine(brainEven, brifing, arr, rightAnswer, globAnswer);
+engine(bE, brifing, arr, rightAnswer, globAnswer);
 const bERun = () => {};
 
 export default bERun;

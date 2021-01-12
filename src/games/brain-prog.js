@@ -7,7 +7,7 @@ const globAnswer = [0];
 const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
 
-const bProg = () => {
+const bPrg = () => {
   const fiveToTen = randomNum(5, 10);
   const oneToTen = randomNum(1, 10);
   let rNum = randomNum();
@@ -43,7 +43,7 @@ const bProg = () => {
   }
 };
 
-engine(bProg, brifing, arr, rightAnswer, globAnswer);
+engine(bPrg, brifing, arr, rightAnswer, globAnswer);
 
 const bPRun = () => {};
 
