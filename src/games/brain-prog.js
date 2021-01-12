@@ -6,19 +6,19 @@ const arr = [];
 const globAnswer = [0];
 const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
+
+const fiveToTen = randomNum(5, 10);
+const oneToTen = randomNum(1, 10);
 let rNum = randomNum();
+const prog = oneToTen;
+const progFunc = () => {
+  const arrF = [];
+  for (let i = 0; i < fiveToTen; i += 1, rNum += prog) {
+    arrF.push(rNum);
+  } return arrF;
+};
 
 const bPrg = () => {
-  const fiveToTen = randomNum(5, 10);
-  const oneToTen = randomNum(1, 10);
-  
-  const prog = oneToTen;
-  const progFunc = () => {
-    const arrF = [];
-    for (let i = 0; i < fiveToTen; i += 1, rNum += prog) {
-      arrF.push(rNum);
-    } return arrF;
-  };
   const progArr = progFunc(); // созд. массив
   const hiddenNumber = (min = 0, max = progArr.length - 1) => {
     // определяется hidden number in arr

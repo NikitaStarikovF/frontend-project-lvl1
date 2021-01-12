@@ -14,8 +14,7 @@ const bE = () => {
   globAnswer[0] = answer;
   if (rNum % 2 === 0) {
     rightAnswer[0] = 'yes';
-  }
-  if (rNum % 2 !== 0) {
+  } else {
     rightAnswer[0] = 'no';
   }
   if ((rNum % 2 !== 0 && answer === 'no')
