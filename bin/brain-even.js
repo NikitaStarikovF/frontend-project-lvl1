@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import engine from '../src/index.js';
+import brainEvenRun from '../src/games/b-e.js';
 
-import brainEven from '../src/games/b-e.js';
-
-engine(brainEven);
+brainEvenRun();

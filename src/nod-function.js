@@ -1,5 +1,3 @@
-import randomNum from './random-number.js';
-
 const NOD = (rNum1, rNum2) => {
   if (rNum2 > rNum1) return NOD(rNum2, rNum1);
   if (!rNum2) return rNum1;

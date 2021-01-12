@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import engine from '../src/indexNod.js';
+import brainNodRun from '../src/games/nod.js';
 
-import brainNod from '../src/games/nod.js';
-
-engine(brainNod);
+brainNodRun();

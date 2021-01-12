@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import engine from '../src/indexProg.js';
+import brainProgRun from '../src/games/brain-prog.js';
 
-import brainProg from '../src/games/brain-prog.js';
-
-engine(brainProg);
+brainProgRun();

@@ -1,60 +1,64 @@
 import readlineSync from 'readline-sync';
 import randomNum from '../random-number.js';
+import engine from '../index.js';
 
-export const arr = [];
-export let globAnswer = 0;
-export let rightAnswer = 0;
+const arr = [];
+const globAnswer = [0];
+const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
 
-const brainProg = () => {
-  const fiveToTen = (min = 5, max = 10) => {
-    const r = Math.round(Math.random() * (max - min) + min);
-    return r;
-  };
+const brainProgRun = () => {
+  const brainProg = () => {
+    const fiveToTen = (min = 5, max = 10) => {
+      const r = Math.round(Math.random() * (max - min) + min);
+      return r;
+    };
 
-  const oneToTen = (min = 1, max = 10) => {
-    const r = Math.round(Math.random() * (max - min) + min);
-    return r;
-  };
+    const oneToTen = (min = 1, max = 10) => {
+      const r = Math.round(Math.random() * (max - min) + min);
+      return r;
+    };
 
-  let rNum = randomNum();
-  const prog = oneToTen();
+    let rNum = randomNum();
+    const prog = oneToTen();
 
-  const progFunc = () => {
-    const arr = [];
-    for (let i = 0; i < fiveToTen(); i += 1, rNum += prog) {
-      arr.push(rNum);
+    const progFunc = () => {
+      const arrF = [];
+      for (let i = 0; i < fiveToTen(); i += 1, rNum += prog) {
+        arrF.push(rNum);
+      }
+      return arrF;
+    };
+
+    const progArr = progFunc(); // созд. массив
+    /* console.log(progArr); */
+
+    const hiddenNumber = (min = 0, max = progArr.length - 1) => {
+      // определяется hidden number in arr
+      const r = Math.round(Math.random() * (max - min) + min);
+      /* console.log(r); */
+      return r;
+    };
+
+    const hiddenNumb = hiddenNumber();
+    const hN = progArr[hiddenNumb];
+    rightAnswer[0] = hN;
+    /* console.log(hN); */ // показать ответ
+
+    for (let i = 0; i < progArr.length; i += 1) { // цикл, вставляющий hN
+      if (i === hiddenNumb) progArr[i] = '..';
     }
-    return arr;
+
+    console.log(`Question: ${progArr.join(' ')}`); // отобразить вопрос со строкой
+
+    const answer = readlineSync.question('Your answer: ');
+    globAnswer[0] = answer;
+    if (Number(rightAnswer[0]) === Number(globAnswer[0])) {
+      console.log('Correct!');
+      arr.push('+');
+    }
   };
-
-  let progArr = progFunc(); // созд. массив
-  console.log(progArr);
-
-  const hiddenNumber = (min = 0, max = progArr.length - 1) => { // определяется hidden number in arr
-    const r = Math.round(Math.random() * (max - min) + min);
-    /* console.log(r); */
-    return r;
-  };
-
-  let hiddenNumb = hiddenNumber();
-  let hN = progArr[hiddenNumb];
-  rightAnswer = hN;
-  console.log(hN); // показать ответ
-
-  for (let i = 0; i < progArr.length; i += 1) { // цикл, вставляющий hN
-    i === hiddenNumb ? progArr[i] = '..' : i;
-  }
-
-  console.log(`Question: ${progArr.join(' ')}`); // отобразить вопрос со строкой
-
-  const answer = readlineSync.question('Your answer: ');
-  globAnswer = answer;
-  if (Number(rightAnswer) === Number(globAnswer)) {
-    console.log('Correct!');
-    arr.push('+');
-  }
+  engine(brainProg, brifing, arr, rightAnswer, globAnswer);
 };
-/* brainProg(); */
 
-export default brainProg;
+export default brainProgRun;

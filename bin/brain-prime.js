@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import engine from '../src/indexPrime.js';
+import brainPrimeRun from '../src/games/prime.js';
 
-import brainPrime from '../src/games/prime.js';
-
-engine(brainPrime);
+brainPrimeRun();
