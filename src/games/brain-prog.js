@@ -7,15 +7,12 @@ const globAnswer = [0];
 const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
 
-const brainProgRun = () => {
+
   const brainProg = () => {
     const fiveToTen = randomNum(5, 10);
-
     const oneToTen = randomNum(1, 10);
-
     let rNum = randomNum();
     const prog = oneToTen;
-
     const progFunc = () => {
       const arrF = [];
       for (let i = 0; i < fiveToTen; i += 1, rNum += prog) {
@@ -23,14 +20,10 @@ const brainProgRun = () => {
       }
       return arrF;
     };
-
     const progArr = progFunc(); // созд. массив
-    /* console.log(progArr); */
-
     const hiddenNumber = (min = 0, max = progArr.length - 1) => {
       // определяется hidden number in arr
       const r = Math.round(Math.random() * (max - min) + min);
-      /* console.log(r); */
       return r;
     };
 
@@ -53,6 +46,6 @@ const brainProgRun = () => {
     }
   };
   engine(brainProg, brifing, arr, rightAnswer, globAnswer);
-};
+  const bPRun = () => {};
 
-export default brainProgRun;
+export default bPRun;
