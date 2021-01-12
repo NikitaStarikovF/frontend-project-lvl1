@@ -6,11 +6,12 @@ const arr = [];
 const globAnswer = [0];
 const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
+let rNum = randomNum();
 
 const bPrg = () => {
   const fiveToTen = randomNum(5, 10);
   const oneToTen = randomNum(1, 10);
-  let rNum = randomNum();
+  
   const prog = oneToTen;
   const progFunc = () => {
     const arrF = [];
