@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/NikitaStarikovF/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/NikitaStarikovF/frontend-project-lvl1/actions)",
+  "description": "This app is a collection of five games to help you test your math skills. Each game is launched by a special command:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

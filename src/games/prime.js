@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import randomNum from '../random-number.js';
-import engine from '../index.js';
+import runEngine from '../index.js';
 
-const arr = [];
+const check = [];
 const globAnswer = ['no'];
 const rightAnswer = [''];
 const brifing = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const bPr = () => {
+const brainPrime = () => {
   const rNum = randomNum();
   function isPrime(n) {
     if (n < 2) {
@@ -32,11 +32,11 @@ const bPr = () => {
 
   if (rightAnswer[0] === globAnswer[0]) {
     console.log('Correct!');
-    arr.push('+');
+    check.push('+');
   }
 };
-engine(bPr, brifing, arr, rightAnswer, globAnswer);
+runEngine(brainPrime, brifing, check, rightAnswer, globAnswer);
 
-const bPrimeRun = () => {};
+const runBrainPrime = () => {};
 
-export default bPrimeRun;
+export default runBrainPrime;

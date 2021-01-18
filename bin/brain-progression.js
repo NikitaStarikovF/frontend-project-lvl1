@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import bPRun from '../src/games/brain-prog.js';
+import runBrainProg from '../src/games/prog.js';
 
-bPRun();
+runBrainProg();

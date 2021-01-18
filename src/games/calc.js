@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 import randomOper from '../random-opertor.js';
 import randomNum from '../random-number.js';
-import engine from '../index.js';
+import runEngine from '../index.js';
 
-const arr = [];
+const check = [];
 const globAnswer = [0];
 const rightAnswer = [0];
 const brifing = 'What is the result of the expression?';
@@ -25,14 +25,13 @@ const brainCalc = () => {
   console.log(`Question: ${rNum1} ${rOp} ${rNum2} `);
   const answer = readlineSync.question('Your answer: ');
   globAnswer[0] = answer;
-  /* console.log(globAnswer[0]); */
   if (Number(rightAnswer) === Number(globAnswer)) {
     console.log('Correct!');
-    arr.push('+');
+    check.push('+');
   }
 };
-engine(brainCalc, brifing, arr, rightAnswer, globAnswer);
+runEngine(brainCalc, brifing, check, rightAnswer, globAnswer);
 
-const bCRun = () => {};
+const runBrainCalc = () => {};
 
-export default bCRun;
+export default runBrainCalc;

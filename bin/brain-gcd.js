@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import bNRun from '../src/games/nod.js';
+import runBrainNod from '../src/games/nod.js';
 
-bNRun();
+runBrainNod();
