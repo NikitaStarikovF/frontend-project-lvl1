@@ -1,29 +1,22 @@
 import readlineSync from 'readline-sync';
-import questionName from './cli.js';
 
-const runEngine = (game, brifing, arr, rightAnswer, globAnswer) => {
-  let err = 0;
-  const checkArr = [];
+const startEngine = (brifing, getGameData) => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?  ');
-  questionName(name);
-  if (game !== '') {
-    console.log(brifing);
-    if (game !== '') {
-      for (let i = 0; i < 3; i += 1) {
-        game();
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(brifing);
 
-        checkArr.push('+');
-        if (checkArr.length !== arr.length) {
-          console.log(`'${globAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.
-                 Let's try again, ${name}!`);
-          err = 1;
-
-          break;
-        }
-      }
-      if (err === 0) console.log(`Congratulations, ${name}!`);
+  for (let i = 1; i <= 3; i += 1) {
+    const [question, correctAnswer] = getGameData();
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question('Answer: ');
+    if (answer !== correctAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      return;
     }
+    console.log('Correct!');
   }
+  console.log('Congratulations!!!');
 };
-export default runEngine;
+
+export default startEngine;

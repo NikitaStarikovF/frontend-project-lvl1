@@ -1,47 +1,35 @@
-import readlineSync from 'readline-sync';
-import randomNum from '../random-number.js';
-import runEngine from '../index.js';
+import startEngine from '../index.js';
+import getRandomNumder from '../random-number.js';
 
-const check = [];
-const globAnswer = [0];
-const rightAnswer = [0];
 export const brifing = 'What number is missing in the progression?';
 
-const fiveToTen = randomNum(5, 10);
-const oneToTen = randomNum(1, 10);
-let rNum = randomNum();
-const prog = oneToTen;
-const progFunc = () => {
-  const checkFunc = [];
-  for (let i = 0; i < fiveToTen; i += 1, rNum += prog) {
-    checkFunc.push(rNum);
-  } return checkFunc;
-};
-
-const brainProg = () => {
-  const progArr = progFunc();
-  const hiddenNumber = (min = 0, max = progArr.length - 1) => {
-    const r = Math.round(Math.random() * (max - min) + min);
-    return r;
+const getGameData = () => {
+  const fiveToTen = getRandomNumder(5, 10);
+  const oneToTen = getRandomNumder(1, 10);
+  let randomNumber = getRandomNumder();
+  const generateProgression = () => {
+    const checkFunc = [];
+    for (let i = 0; i < fiveToTen; i += 1, randomNumber += oneToTen) {
+      checkFunc.push(randomNumber);
+    } return checkFunc;
   };
-  const hiddenNumb = hiddenNumber();
-  const hN = progArr[hiddenNumb];
-  rightAnswer[0] = hN;
+  const progression = generateProgression();
 
-  for (let i = 0; i < progArr.length; i += 1) {
-    if (i === hiddenNumb) progArr[i] = '..';
-  }
+  const getHiddenNumber = (min = 0, max = progression.length - 1) => {
+    const num = Math.round(Math.random() * (max - min) + min);
+    return num;
+  };
 
-  console.log(`Question: ${progArr.join(' ')}`);
-  const answer = readlineSync.question('Your answer: ');
-  globAnswer[0] = answer;
-  if (Number(rightAnswer[0]) === Number(globAnswer[0])) {
-    console.log('Correct!');
-    check.push('+');
-  }
+  const hiddenNumb = getHiddenNumber();
+  const hN = progression[hiddenNumb];
+  progression[hiddenNumb] = '..';
+
+  const question = `${progression}`;
+
+  const correctAnswer = String(hN);
+  return [question, correctAnswer];
 };
-
-runEngine(brainProg, brifing, check, rightAnswer, globAnswer);
+startEngine(brifing, getGameData);
 
 const runBrainProg = () => {};
 

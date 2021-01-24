@@ -1,37 +1,34 @@
-import readlineSync from 'readline-sync';
-import randomOper from '../random-opertor.js';
-import randomNum from '../random-number.js';
-import runEngine from '../index.js';
+import startEngine from '../index.js';
+import getRandomNumder from '../random-number.js';
 
-const check = [];
-const globAnswer = [0];
-const rightAnswer = [0];
 const brifing = 'What is the result of the expression?';
 
-const brainCalc = () => {
-  const rNum1 = randomNum();
-  const rNum2 = randomNum();
-  const rOp = randomOper();
-  if (rOp === '+') {
-    rightAnswer[0] = rNum1 + rNum2;
-  }
-  if (rOp === '-') {
-    rightAnswer[0] = rNum1 - rNum2;
-  }
-  if (rOp === '*') {
-    rightAnswer[0] = rNum1 * rNum2;
-  }
-
-  console.log(`Question: ${rNum1} ${rOp} ${rNum2} `);
-  const answer = readlineSync.question('Your answer: ');
-  globAnswer[0] = answer;
-  if (Number(rightAnswer) === Number(globAnswer)) {
-    console.log('Correct!');
-    check.push('+');
-  }
+const getRandomOper = (operators = ['+', '-', '*']) => {
+  const r = Math.round(Math.random() * ((operators.length - 1) - 0) + 0);
+  return operators[r];
 };
-runEngine(brainCalc, brifing, check, rightAnswer, globAnswer);
 
+const getGameData = () => {
+  const randomNum1 = getRandomNumder();
+  const randomNum2 = getRandomNumder();
+  const randomOper = getRandomOper();
+
+  const getAnswer = (operand1, operator, operand2) => {
+    if (operator === '+') {
+      return operand1 + operand2;
+    }
+    if (operator === '-') {
+      return operand1 - operand2;
+    }
+    return operand1 * operand2;
+  };
+
+  const question = `${randomNum1} ${randomOper} ${randomNum2}`;
+  const correctAnswer = String((getAnswer(randomNum1, randomOper, randomNum2)));
+  return [question, correctAnswer];
+};
+
+startEngine(brifing, getGameData);
 const runBrainCalc = () => {};
 
 export default runBrainCalc;

@@ -1,30 +1,30 @@
-import readlineSync from 'readline-sync';
-import randomNum from '../random-number.js';
-import runEngine from '../index.js';
+import startEngine from '../index.js';
+import getRandomNumder from '../random-number.js';
 
-const check = [];
-const globAnswer = ['no'];
-const rightAnswer = [''];
 const brifing = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const brainPrime = () => {
-  const rNum = randomNum();
-  function isPrime(n) {
-    if (n < 2) {
+const getGameData = () => {
+  const randomNum1 = getRandomNumder();
+
+  function isPrime(num) {
+    if (num < 2) {
       return 'no';
-    } if (n === 2) {
+    } if (num === 2) {
       return 'yes';
     }
     let i = 2;
-    const limit = Math.sqrt(n);
+    const limit = Math.sqrt(num);
     while (i <= limit) {
-      if (n % i === 0) {
+      if (num % i === 0) {
         return 'no';
       } i += 1;
     } return 'yes';
   }
+  const question = `${randomNum1}`;
+  const correctAnswer = isPrime(randomNum1);
+  return [question, correctAnswer];
 
-  rightAnswer[0] = isPrime(rNum);
+/*   rightAnswer[0] = isPrime(rNum);
 
   console.log(`Question: ${rNum}`);
   const answer = readlineSync.question('Your answer: ');
@@ -33,9 +33,9 @@ const brainPrime = () => {
   if (rightAnswer[0] === globAnswer[0]) {
     console.log('Correct!');
     check.push('+');
-  }
+  } */
 };
-runEngine(brainPrime, brifing, check, rightAnswer, globAnswer);
+startEngine(brifing, getGameData);
 
 const runBrainPrime = () => {};
 
