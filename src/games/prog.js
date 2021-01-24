@@ -25,7 +25,6 @@ const getGameData = () => {
   progression[hiddenNumb] = '..';
 
   const question = progression.join(' ');
-  /* const question = `${progression}`; */
 
   const correctAnswer = String(hN);
   return [question, correctAnswer];
