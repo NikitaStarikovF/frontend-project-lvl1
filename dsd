@@ -1,0 +1,386 @@
+[33mcommit 63d11d619f631fb010c191b54e3e79b0398a4b77[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Mon Jan 25 00:01:31 2021 +0300
+
+    final 1.3
+
+[33mcommit b7a6af5c79aacb9b926ab0eb13a04d2a8fea1311[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Mon Jan 18 21:27:59 2021 +0300
+
+    final 1.2
+
+[33mcommit 36df3f892bb22723cdebce47e3a3681dde2a9169[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Mon Jan 18 20:42:17 2021 +0300
+
+    Update README.md
+
+[33mcommit 8e2969ff84418f9189db4299746beb95bcd0fc69[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:49:25 2021 +0300
+
+    Update main.yml
+
+[33mcommit 5e59d4d710824e7fcc721921ecf89afd12b7a448[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:35:19 2021 +0300
+
+    Update README.md
+
+[33mcommit 98ce897c6d56eb2e87ed7f74b8cffae892ced386[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:31:22 2021 +0300
+
+    Update README.md
+
+[33mcommit 0f2eb370a304810c1ad96e74d1c441597b8abc1c[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:30:20 2021 +0300
+
+    Update README.md
+
+[33mcommit b6d0edbba2668648e30cbf0873257c91f16fbe31[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:23:11 2021 +0300
+
+    Update README.md
+
+[33mcommit 99640b53c95567cd394abe8f20bf9e56073c649f[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Jan 16 22:17:20 2021 +0300
+
+    Update README.md
+
+[33mcommit 66841e6e6c17f4c4df8892ba4c4645095e179bb5[m[33m ([m[1;33mtag: vBuild108043[m[33m)[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 21:54:32 2021 +0300
+
+    final 1.1
+
+[33mcommit b7097f7feb234579b28d2da36dba9536c6a49222[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 21:34:17 2021 +0300
+
+    final 1.1
+
+[33mcommit da117e15d1ac8a3006c265a6d1ab5f5cf79af514[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 21:25:08 2021 +0300
+
+    final 1.1
+
+[33mcommit b26e0f875c0d0f40d8fac63e2e94f4835bc40ba4[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 21:04:24 2021 +0300
+
+    final 1.1
+
+[33mcommit 80441b43e54123ec5c3d340b80ef28be700d281b[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 20:35:48 2021 +0300
+
+    final 1.1
+
+[33mcommit f3add92bf885358ef7245f1421bfa755c4798004[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 20:25:45 2021 +0300
+
+    final 1.1
+
+[33mcommit a0334d2ae9c70a5d5b0213bdb6f36a708c92f568[m
+Merge: 907bd4d 1bec07e
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 19:57:31 2021 +0300
+
+    Merge branch 'main' of https://github.com/NikitaStarikovF/frontend-project-lvl1 into main
+
+[33mcommit 907bd4d473deacca719d540c50be79ed6237a289[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 19:55:39 2021 +0300
+
+    final 1.1
+
+[33mcommit 1bec07ea81d5a09cbc6bdd9ba92c7acff54d0104[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Jan 12 19:29:15 2021 +0300
+
+    Update hexlet-check.yml
+
+[33mcommit 908f2e9da1ec5f2e4659f855227ac693c053b14d[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 12 18:22:59 2021 +0300
+
+    final
+
+[33mcommit 0bb5faa16c7aed4b1e2246ca97e9bdc7648ec4af[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Jan 5 20:15:52 2021 +0300
+
+    prime
+
+[33mcommit 53abb775712bcee0816d251765037b53866cd6ce[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Fri Dec 25 19:26:31 2020 +0300
+
+    NOD
+
+[33mcommit b5a47fc1335581cf62bb5fdf00ecc9de25da8e4b[m
+Merge: e0e52ab 1fbe37a
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Thu Dec 24 20:53:36 2020 +0300
+
+    Merge branch 'main' of https://github.com/NikitaStarikovF/frontend-project-lvl1 into main
+
+[33mcommit e0e52ab25b8252851f64cf11fb7643364a37eb85[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Thu Dec 24 20:52:37 2020 +0300
+
+    calc
+
+[33mcommit 1fbe37a27a28acb2d1cd29220620efe092ea2182[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Sat Dec 19 18:49:54 2020 +0300
+
+    Update README.md
+
+[33mcommit 17d90604e399d4fd1c18fcbf9b62b057d9c2d0a8[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Thu Dec 17 21:24:25 2020 +0300
+
+    4 step
+
+[33mcommit 384da0bb46f40a67faae6b08591025a998a898ef[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:21:32 2020 +0300
+
+    Update README.md
+
+[33mcommit 9f95a1c9295fc925664ca125943c47539b06ccfc[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:20:32 2020 +0300
+
+    Update README.md
+
+[33mcommit 97c6d20756c6219006f9c21d65e46923f56757f4[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:11:44 2020 +0300
+
+    Update README.md
+
+[33mcommit edce592d4d05745a71a5f6c47e16a2839afcf90d[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:07:34 2020 +0300
+
+    Update README.md
+
+[33mcommit 3af8bf16f272e676a3a3de49f2a59767be80badf[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:06:50 2020 +0300
+
+    Update README.md
+
+[33mcommit 5defbb6fe154ae03c18f9f6387df98074246ca27[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:06:33 2020 +0300
+
+    Update main.yml
+
+[33mcommit efe989b7f9f2d2e782223dabfe52319bd48de8ea[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:06:09 2020 +0300
+
+    Update README.md
+
+[33mcommit 5b96fd46f7377d564498215cad6b05b3ff182734[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 21:03:32 2020 +0300
+
+    Update README.md
+
+[33mcommit 3f91c3be00837782863186cbe39b8c170e4f4d1a[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 20:56:31 2020 +0300
+
+    Update main.yml
+
+[33mcommit 9f70cb1a32756ee4683882ecf3f7b61a7a03b02d[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 20:55:31 2020 +0300
+
+    Update main.yml
+
+[33mcommit 6fa7d97f818d15c13b5cdf641f5b6bd8d22848fe[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 20:45:05 2020 +0300
+
+    Update main.yml
+
+[33mcommit c3d186b2d3d2a601f0b80c5df3c0390e3d036d42[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 17:20:33 2020 +0300
+
+    Update main.yml
+
+[33mcommit ee355691f7d1415a292602696bd2067142541156[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 16:36:13 2020 +0300
+
+    Update main.yml
+
+[33mcommit 88e51d2b98fae628650b8f6e82c74de1c0f775f5[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 16:31:08 2020 +0300
+
+    Update main.yml
+
+[33mcommit bcd3191a9345e1fe11d364eced780d7cccd2bbbf[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 16:24:57 2020 +0300
+
+    Update main.yml
+
+[33mcommit cbaf951655055ac3e1997d711a1b7f7560846645[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 16:17:15 2020 +0300
+
+    Update main.yml
+
+[33mcommit 625ce791d434155e37a50633b0e7190997ec37df[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 16:08:01 2020 +0300
+
+    Update main.yml
+
+[33mcommit 2c6172f6c109ce8e0416109093f68d69a2ef2e26[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Thu Dec 17 15:42:14 2020 +0300
+
+    Update main.yml
+
+[33mcommit 9a59f6f3944ee53e6f3683330fdaf4eb005ffb1e[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Wed Dec 16 20:14:57 2020 +0300
+
+    Update main.yml
+
+[33mcommit 9ae8c142fef482f06931518bf118316554b068cc[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Wed Dec 16 20:13:16 2020 +0300
+
+    Update main.yml
+
+[33mcommit 7907a6b6c290dc4c153cd44da6988f9bda1ce19a[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Wed Dec 16 19:56:29 2020 +0300
+
+    update README
+
+[33mcommit 007d23a08556d0849580777c372e2f7a272c5bf2[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Wed Dec 16 19:41:33 2020 +0300
+
+    3 update Makefile
+
+[33mcommit 034abbf7e4427028e3e66dd30128066e2110a63a[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Wed Dec 16 19:18:51 2020 +0300
+
+    2 update Makefile
+
+[33mcommit 65ab4d64ed62b537f1d319213d2d8c3b1e92e922[m
+Merge: 3e698c9 ec7cfb6
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Wed Dec 16 19:14:57 2020 +0300
+
+    Merge branch 'main' of https://github.com/NikitaStarikovF/frontend-project-lvl1 into main
+
+[33mcommit 3e698c9266fd5f1124baccef9a607ec8a17af362[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Wed Dec 16 19:06:37 2020 +0300
+
+    update Makefile
+
+[33mcommit ec7cfb6598c18b9d2945efb5469587ae73f42b10[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Wed Dec 16 18:23:56 2020 +0300
+
+    Update main.yml
+
+[33mcommit 143f15a983bc50e86e393215501d6323d0149523[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Wed Dec 16 18:18:13 2020 +0300
+
+    Node.js CI
+
+[33mcommit e1cde6b1d87f40e9a7cc9702b32f0a0ab27f450c[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 19:12:59 2020 +0300
+
+    bg
+
+[33mcommit c0d6db58a816f957a143b41113e14b393355a538[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 19:09:50 2020 +0300
+
+    Update main.yml
+
+[33mcommit c613ee6c45e3dc43d7aad5c876d90c0823c4515f[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 18:56:34 2020 +0300
+
+    Update main.yml
+
+[33mcommit 67b9bbba407b9aaac8a2b54167c56bbc44187504[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 18:42:54 2020 +0300
+
+    Update main.yml
+
+[33mcommit 5a08125f7d633b0bd344a58a65019034c9c01a43[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 18:34:27 2020 +0300
+
+    Update main.yml
+
+[33mcommit 86d33a4ff09ebf8d8e1c04610fbf78dd98cc5fac[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Tue Dec 15 18:21:30 2020 +0300
+
+    Create main.yml
+
+[33mcommit f68d86a33faf333dfe8c7c3405a51c3791948589[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Tue Dec 15 17:45:20 2020 +0300
+
+    eslint
+
+[33mcommit 21f677d373c5c347ea53f76bdd50307657000eea[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Sat Dec 12 21:03:26 2020 +0300
+
+    questionName
+
+[33mcommit d05a14975d2192ad0c2a21274a2bd2425580da60[m
+Author: Nikita Starikov <december_soul@inbox.ru>
+Date:   Sat Dec 12 19:01:20 2020 +0300
+
+    commit1
+
+[33mcommit 65b3ea79242dacf11ca75ce030fd399c320ada13[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Fri Dec 11 20:02:10 2020 +0300
+
+    Add README.md
+
+[33mcommit 3357fe6c9233f8e5fbf6390e376ba3a1403b2547[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Fri Dec 11 20:02:09 2020 +0300
+
+    Add README.md
+
+[33mcommit 837f219aecb9b607d7aa08b5d16a30ccca19cc0a[m
+Author: NikitaStarikovF <68431780+NikitaStarikovF@users.noreply.github.com>
+Date:   Fri Dec 11 20:02:08 2020 +0300
+
+    Add hexlet-check.yml
