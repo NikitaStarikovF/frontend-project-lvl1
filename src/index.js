@@ -16,7 +16,7 @@ const startEngine = (brifing, getGameData) => {
     }
     console.log('Correct!');
   }
-  console.log('Congratulations!!!');
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startEngine;
