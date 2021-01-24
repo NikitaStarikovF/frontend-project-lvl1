@@ -11,7 +11,7 @@ const startEngine = (brifing, getGameData) => {
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Answer: ');
     if (answer !== correctAnswer) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
