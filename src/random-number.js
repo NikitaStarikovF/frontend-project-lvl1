@@ -1,5 +1,5 @@
 const getRandomNumder = (min = 0, max = 99) => {
-  const r = Math.round(Math.random() * (max - min) + min);
-  return r;
+  const randomNumber = Math.round(Math.random() * (max - min) + min);
+  return randomNumber;
 };
 export default getRandomNumder;

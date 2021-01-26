@@ -1,5 +1,3 @@
 #!/usr/bin/env node
 
-import runBrainProg from '../src/games/prog.js';
-
-runBrainProg();
+import getGameData from '../src/games/prog.js';

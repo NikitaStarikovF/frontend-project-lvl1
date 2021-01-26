@@ -1,18 +1,20 @@
 import startEngine from '../index.js';
 import getRandomNumder from '../random-number.js';
 
-export const brifing = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
+
+const generateProgression = () => {
+  const lengthProgression = getRandomNumder(5, 10);
+  const stepProgression = getRandomNumder(1, 10);
+  let randomNumber = getRandomNumder();
+  const progression = [];
+  for (let i = 0; i < lengthProgression; i += 1, randomNumber += stepProgression) {
+    progression.push(randomNumber);
+  }
+  return progression;
+};
 
 const getGameData = () => {
-  const fiveToTen = getRandomNumder(5, 10);
-  const oneToTen = getRandomNumder(1, 10);
-  let randomNumber = getRandomNumder();
-  const generateProgression = () => {
-    const checkFunc = [];
-    for (let i = 0; i < fiveToTen; i += 1, randomNumber += oneToTen) {
-      checkFunc.push(randomNumber);
-    } return checkFunc;
-  };
   const progression = generateProgression();
 
   const getHiddenNumber = (min = 0, max = progression.length - 1) => {
@@ -21,16 +23,14 @@ const getGameData = () => {
   };
 
   const hiddenNumb = getHiddenNumber();
-  const hN = progression[hiddenNumb];
+  const colon = progression[hiddenNumb];
   progression[hiddenNumb] = '..';
 
   const question = progression.join(' ');
 
-  const correctAnswer = String(hN);
+  const correctAnswer = String(colon);
   return [question, correctAnswer];
 };
-startEngine(brifing, getGameData);
+startEngine(description, getGameData);
 
-const runBrainProg = () => {};
-
-export default runBrainProg;
+export default getGameData;

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import engine from '../src/index.js';
+import startEngine from '../src/cli.js';
 
-engine('');
+startEngine();
