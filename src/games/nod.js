@@ -13,8 +13,8 @@ const getGameData = () => {
   const randomNum2 = getRandomNumder();
 
   const question = `${randomNum1} ${randomNum2}`;
-  const correctAnswer = String(getNOD(randomNum1, randomNum2));
-  return [question, correctAnswer];
+  const answer = String(getNOD(randomNum1, randomNum2));
+  return [question, answer];
 };
 
 startEngine(description, getGameData);

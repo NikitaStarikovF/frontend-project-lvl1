@@ -3,9 +3,7 @@ import getRandomNumder from '../random-number.js';
 
 const description = 'What is the result of the expression?';
 
-const getRandomOper = (operators = ['+', '-', '*']) => operators[getRandomNumder(0, 2)];
-
-const getAnswer = (operand1, operator, operand2) => {
+const calculateAnswer = (operand1, operator, operand2) => {
   switch (operator) {
     case '+':
       return operand1 + operand2;
@@ -17,12 +15,13 @@ const getAnswer = (operand1, operator, operand2) => {
 };
 
 const getGameData = () => {
+  const operators = ['+', '-', '*'];
   const randomNum1 = getRandomNumder();
   const randomNum2 = getRandomNumder();
-  const randomOper = getRandomOper();
+  const randomOper = operators[getRandomNumder(0, 2)];
 
   const question = `${randomNum1} ${randomOper} ${randomNum2}`;
-  const answer = String((getAnswer(randomNum1, randomOper, randomNum2)));
+  const answer = String((calculateAnswer(randomNum1, randomOper, randomNum2)));
   return [question, answer];
 };
 

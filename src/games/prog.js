@@ -4,32 +4,24 @@ import getRandomNumder from '../random-number.js';
 const description = 'What number is missing in the progression?';
 
 const generateProgression = () => {
-  const lengthProgression = getRandomNumder(5, 10);
-  const stepProgression = getRandomNumder(1, 10);
-  let randomNumber = getRandomNumder();
+  const progressionLength = getRandomNumder(5, 10);
+  const progressionStep = getRandomNumder(1, 10);
+  const randomNumber = getRandomNumder();
   const progression = [];
-  for (let i = 0; i < lengthProgression; i += 1, randomNumber += stepProgression) {
-    progression.push(randomNumber);
+  for (let i = 0; i < progressionLength; i += 1) {
+    const newElement = randomNumber + i * progressionStep;
+    progression.push(newElement);
   }
   return progression;
 };
 
 const getGameData = () => {
   const progression = generateProgression();
-
-  const getHiddenNumber = (min = 0, max = progression.length - 1) => {
-    const num = Math.round(Math.random() * (max - min) + min);
-    return num;
-  };
-
-  const hiddenNumb = getHiddenNumber();
-  const colon = progression[hiddenNumb];
+  const hiddenNumb = getRandomNumder(0, progression.length - 1);
+  const answer = String(progression[hiddenNumb]);
   progression[hiddenNumb] = '..';
-
   const question = progression.join(' ');
-
-  const correctAnswer = String(colon);
-  return [question, correctAnswer];
+  return [question, answer];
 };
 startEngine(description, getGameData);
 
