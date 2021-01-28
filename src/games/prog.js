@@ -23,6 +23,7 @@ const getGameData = () => {
   const question = progression.join(' ');
   return [question, answer];
 };
-startEngine(description, getGameData);
 
-export default getGameData;
+export default () => {
+  startEngine(description, getGameData);
+};

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import getGameData from '../src/games/nod.js';
+import runGame from '../src/games/nod.js';
 
-getGameData();
+runGame();

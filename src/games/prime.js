@@ -29,4 +29,6 @@ const getGameData = () => {
 };
 startEngine(description, getGameData);
 
-export default getGameData;
+export default () => {
+  startEngine(description, getGameData);
+};
