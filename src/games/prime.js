@@ -27,7 +27,6 @@ const getGameData = () => {
   const answer = isPrime(randomNum) ? 'yes' : 'no';
   return [question, answer];
 };
-startEngine(description, getGameData);
 
 export default () => {
   startEngine(description, getGameData);
