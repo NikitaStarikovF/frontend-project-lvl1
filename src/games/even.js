@@ -10,7 +10,6 @@ const getGameData = () => {
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 };
-startEngine(description, getGameData);
 
 export default () => {
   startEngine(description, getGameData);
