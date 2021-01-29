@@ -3,23 +3,18 @@ import getRandomNumder from '../random-number.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime(num) {
+const isPrime = (num) => {
+  const limit = Math.sqrt(num);
   if (num < 2) {
     return false;
   }
-  if (num === 2) {
-    return true;
-  }
-  let i = 2;
-  const limit = Math.sqrt(num);
-  while (i <= limit) {
+  for (let i = 2; i <= limit; i += 1) {
     if (num % i === 0) {
       return false;
     }
-    i += 1;
   }
   return true;
-}
+};
 
 const getGameData = () => {
   const randomNum = getRandomNumder();
