@@ -23,7 +23,7 @@ const getGameData = () => {
   const randomNum2 = getRandomNumder();
   const randomOper = operators[getRandomNumder(0, operators.length - 1)];
   const question = `${randomNum1} ${randomOper} ${randomNum2}`;
-  const answer = calculateAnser(randomNum1, randomOper, randomNum2);
+  const answer = String(calculateAnser(randomNum1, randomOper, randomNum2));
   return [question, answer];
 };
 
